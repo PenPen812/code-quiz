@@ -14,7 +14,7 @@
 <body>
     <nav id="navmenu">
         <a href="view-score.html" id="view-score">View High Score</a>
-        <span id="timer">Timer: 00 </span>
+        Timer: 00 <span id="timer"></span> sec
     </nav>
     <header>
         <h1>Code Quiz Challenge!</h1>
@@ -22,11 +22,7 @@
     <h3>Try to answer the following code-related questions within the time limited.
         Keep in mind that incorrect answer will penalize your score / time by 10 seconds!
     </h3>
-    <div>
-        <a href="quiz.html" class="btn">Start Quiz</a>
-
-    </div>
-
+        <a href="./quiz.html" onclick="setTime()" class="btn">Start Quiz</a>
 
     <script src="./assets/script.js"></script>
 </body>

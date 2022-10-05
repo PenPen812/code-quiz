@@ -5,15 +5,12 @@ var headerTag = document.querySelector("header")
 var content = document.querySelector("h3")
 var button = document.querySelector("btn")
 
-viewScore.setAttribute("style","text-decoration: none;","color:rgb(249, 136, 155)")
-navTag.setAttribute("style", "display: flex;","justify-content: space-between;")
-button.setAttribute("style","font-size: 25px;","padding: 20px;","width:50px;","display: flexbox;","flex-direction: row;","justify-content:center;","align-content: center;","color:white;","background-color: lightcoral;","border-radius: 15px;","text-decoration: none;","text-align: center")
-headerTag.setAttribute("style","width: 100%;","display: flex;","flex-direction: row;","padding: auto;","margin: 50px;","font-size: 20px;","text-decoration: none;","justify-content: center;","align-items: center;","font-size: 60px;")
-content.querySelector("style","line-height: 50px;","margin: 100px;","display: flex;","flex-direction: row;","justify-content: center;","align-items: center;","text-align: center;")
+
 
 //1. timer on the question page
-var timerEl = document.getElementById("#timer")
-var timer = 60
+var timerEl = document.getElementById("timer");
+var timer = 60;
+var highScore = 0;
 
 
 
@@ -27,11 +24,38 @@ function setTime() {
         }
     }, 1000)
 }
+// setTime();
+
 
 // 2. Questions are present automatically after the answer
+var quiz = [{
+    question: "What is ...?",
+    answers: [
+        { answer: "1. ________", correct: false },
+        { answer: "2. ________", correct: false },
+        { answer: "3. ________", correct: true },
+        { answer: "4. ________", correct: false }
+    ]
+}, {
+    question: "why ...?",
+    answers: [
+        { answer: "1. ________", correct: false },
+        { answer: "2. ________", correct: false },
+        { answer: "3. ________", correct: true },
+        { answer: "4. ________", correct: false }
+    ]
+}
+];
+quiz.forEach(function(e){
+    //This will attach the quiz on the webpage
 
-
+});
 // 3. Time subtracted if the answer is incorrect
+function checkAnswer(isCorrect) {
+    if (isCorrect) {
+        }  else { } }
+    
+
 // 4.Game is Over when all questions are answered
 
 // 5. Name initial and the scoreboard will show after the game is over
